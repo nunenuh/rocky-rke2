@@ -1,0 +1,18 @@
+server: https://s1.rke2.dev:9345
+token: K10ed5dce049eccb4ce02986c4fc6d4aadb243f0f33cfdc5f0ebb6dcdba661f3e6b::server:5c1140bca29d70047329faae4b3796d7
+
+profile: cis-1.6
+selinux: true
+secrets-encryption: true
+write-kubeconfig-mode: 0640
+cni: canal
+tls-san:
+  - s1.rke2.dev
+  - s2.rke2.dev
+  - s3.rke2.dev
+  - 192.168.56.101
+  - 192.168.56.102
+  - 192.168.56.103
+etcd-expose-metrics: true
+node-ip: 192.168.56.102
+debug: true
